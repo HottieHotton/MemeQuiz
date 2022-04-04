@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Meme Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Meme QUiz</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+  <body>
+    <header>
+      <nav>
+         <a href="highscore.html">View High Scores</a>
+      </nav>
+      <p id="timer-value">Timer: 60</p>
+    </header>
 
-<body>
+    <div class="front-page text">
+      <h1>Meme Quiz Challenge</h1>
+      <p>
+        If you know the meme culture, this quiz is for you! See if you know the
+        well-known mems of today!
+      </p>
+      <button id="start">Start Quiz</button>
+    </div>
 
-  <script src="./assets/js/script.js"></script>
-</body>
+    <div class="quiz-questions text"></div>
 
+    <div class="quiz-end text">
+        <div>
+            <div>
+              Great Job!
+            </div>
+            <div>
+              <h5 id="final-score">Your Final Score is: </h5>
+              <label for="name">Enter Initials: </label>
+              <input type="text" id="initials" name="initials" required minlength="2" maxlength="2">
+              <button type="submit" id="submit">Submit</button>
+            </div>
+          </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
